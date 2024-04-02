@@ -1,0 +1,46 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "type": "map",
+        "values": [
+          "string",
+          "int",
+          "long",
+          "float",
+          "double",
+          "boolean",
+          "null",
+          {
+            "items": [
+              "string",
+              "int",
+              "long",
+              "float",
+              "double",
+              "boolean",
+              "null"
+            ],
+            "type": "array"
+          },
+          {
+            "type": "map",
+            "values": [
+              "string",
+              "int",
+              "long",
+              "float",
+              "double",
+              "boolean",
+              "null"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "name": "DataAvro",
+  "namespace": "org.example.avro.model",
+  "type": "record"
+}
